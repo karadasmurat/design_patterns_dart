@@ -1,16 +1,13 @@
 # design_patterns_dart
 
-A new Flutter project.
+A project to understand Software Design Patterns, using Dart Language.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is a starting point to understand Design Patterns.
 
-A few resources to get you started if this is your first Flutter project:
+A few resources to get you started:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [Dart Language](https://dart.dev/guides)
+- [Wikipedia - Software design pattern](https://en.wikipedia.org/wiki/Software_design_pattern)
+- [Head First Design Patterns](https://learning.oreilly.com/library/view/head-first-design/9781492077992/)
