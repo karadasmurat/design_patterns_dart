@@ -1,34 +1,37 @@
-import 'dart:math';
-
 void main(List<String> args) {
   //create concrete base component
-  Beverage beverage = HouseBlend();
-  print(beverage);
+  Beverage beverage01 = HouseBlend();
+  Beverage beverage02 = HouseBlend(description: "House-Blend");
 
-  var soymilkAddOn = SoyMilk(component: beverage);
+  print(beverage01);
+  print(beverage02);
+
+  var soymilkAddOn = SoyMilk(component: beverage01);
   print(soymilkAddOn.cost());
 }
 
 abstract class Beverage {
-  String description = "Base component";
+  String description;
+
+  Beverage({this.description = "Beverage"});
 
   num cost(); // Abstract method.
 }
 
 // Concrete implementation we would like to decorate.
 class HouseBlend extends Beverage {
-
   @override
   num cost() {
     return 1;
   }
 
   // Unnamed Constructor
-  HouseBlend(String desc): super.description = desc;
+  HouseBlend({super.description = "Best HouseBlend"});
 
+  /// A string representation of this object.
   @override
   String toString() {
-    return "${super.toString()}, $description";
+    return "Instance of '$runtimeType', description: $description";
   }
 }
 
