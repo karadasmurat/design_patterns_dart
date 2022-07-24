@@ -6,7 +6,7 @@ A project to understand Software Design Patterns, using Dart Language.
 
 This project is a starting point to understand Design Patterns.
 
-A few resources to get you started:
+A few resources I used get started:
 
 - [Dart Language](https://dart.dev/guides)
 - [Wikipedia - Software design pattern](https://en.wikipedia.org/wiki/Software_design_pattern)
