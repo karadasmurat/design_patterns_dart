@@ -12,28 +12,6 @@ class SimpleFactory {
   }
 }
 
-enum ProductType { x, y }
-
-// Dart does not support interface keyword.
-// We can use abstract to define interfaces.
-abstract class Product {
-  void design();
-}
-
-class ConcreteProductX implements Product {
-  @override
-  void design() {
-    print("Product X..");
-  }
-}
-
-class ConcreteProductY implements Product {
-  @override
-  void design() {
-    print("Product Y..");
-  }
-}
-
 void main() {
   Product p01 = SimpleFactory.createProduct(ProductType.x);
   p01.design();
