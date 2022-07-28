@@ -1,3 +1,5 @@
+import '../model/product.dart';
+
 class SimpleFactory {
   //Objects to be created belong to the same Product (abstract class),
   //and the specific object type to be created is determined by the parameter.
@@ -5,9 +7,9 @@ class SimpleFactory {
   static Product createProduct(ProductType pt) {
     switch (pt) {
       case ProductType.x:
-        return ConcreteProductX();
+        return ConcreteProductX("x");
       case ProductType.y:
-        return ConcreteProductY();
+        return ConcreteProductY("y");
     }
   }
 }
