@@ -24,7 +24,7 @@ class Circle extends Shape {
   }
 
   @override
-  String toString() => "A $color Circle";
+  String toString() => "A $color Circle with radius $radius";
 }
 
 class Rectangle extends Shape {
@@ -46,5 +46,6 @@ class Rectangle extends Shape {
   }
 
   @override
-  String toString() => "A $color Rectangle";
+  String toString() =>
+      "A $color Rectangle with width: $width and height: $height";
 }
